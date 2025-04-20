@@ -58,3 +58,9 @@ a {
   *::-webkit-scrollbar-thumb {
     background: transparent;
   }
+
+  input {
+    &:focus {
+        outline: none;
+    }
+  }

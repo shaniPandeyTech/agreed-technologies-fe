@@ -1,7 +1,7 @@
 @import '@/styles/variables';
 .banner {
     margin-top: 20px;
-    height: 600px;
+    height: 400px;
     display: flex;
 
     .bannerLhs {
@@ -43,9 +43,7 @@
                 margin: 12px 0 16px;
             }
 
-            .btnWhite {
-                background-color: $white;
-                color: $black;
+            a {
                 min-width: 254px;
                 margin-top: 50px;
             }
@@ -53,11 +51,49 @@
     }
 
     .bannerRhs {
+        background-image: url('/images/bannerImg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 65%;
         display: block;
         background-color: $white;
         border-radius: 30px;
-        padding-left: 82px;
+        padding-left: 36px;
         height: 100%;
+        display: flex;
+        align-items: center;
+
+        .bannerRhsInfo {
+            width: 64%;
+            display: block;
+            font-size: 16px;
+            color: $black;
+
+            h1 {
+                font-size: 46px;
+                font-weight: 800;
+                line-height: 55px;
+                margin-top: 10px;
+                margin: 12px 0 16px;
+                color: $black;
+    
+                span {
+                    color: $primary-color;
+                }
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+                color: $black;
+            }
+
+            a {
+                margin-top: 24px;
+            }
+        }
+
+        
     }
 }
