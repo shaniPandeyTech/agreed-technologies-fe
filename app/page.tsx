@@ -1,35 +1,33 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Container, Typography, Button } from '@mui/material';
+"use client"
+import CustomSlider from "@/src/components/CustomSlider";
+import DriveRevenueCard from "@/src/components/DriveRevenueCard";
+import FaqSection from "@/src/components/FaqSection";
 
 export default function Home() {
+  
+ 
+
+  const settings = {
+    dots: true,
+    arrow: true,
+    infinite: true,
+    autoplay: true,
+    slideToShow: 2,
+    SlideToScroll: 1,
+    speed: 500,
+    swipe: true
+  }
   return (
-    <div className={styles.page}>
-      <Container maxWidth="sm">
-      <Typography variant="h3" gutterBottom>
-        Hello MUI + Next.js!
-      </Typography>
-      <Button variant="contained" color="primary">
-        Click Me
-      </Button>
-    </Container>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-      </main>
-      
+    <div>
+      <div className="container">
+      <br/><br/><br/>
+        <FaqSection />
+        <DriveRevenueCard />
+        
+
+        <br/><br/><br/>
+        <br/><br/><br/>
+      </div>
     </div>
   );
 }
