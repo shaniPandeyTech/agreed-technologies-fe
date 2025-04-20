@@ -1,6 +1,5 @@
 @import '@/styles/variables';
 
-
 .header {
     background-color: $white;
     padding: 12px 0;
@@ -62,6 +61,54 @@
 
                 &.active {
                     color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        .logo {
+            width: 80px;
+            height: 24px;
+        }
+    
+        .tollFree {
+            font-size: 12px;
+            padding: 4px 8px;
+        }
+    }
+    
+    .nav {
+        display: none;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+    
+            li {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                flex-shrink: 0;
+    
+                &:not(:last-child) {
+                    margin-right: 36px;
+                }
+    
+                a{
+                    display: block;
+                    color: $black;
+                    line-height: 22px;
+                    font-size: 16px;
+                    font-weight: 600;
+    
+                    &.active {
+                        color: $primary-color;
+                    }
                 }
             }
         }

@@ -3,6 +3,7 @@
     margin-top: 20px;
     height: 400px;
     display: flex;
+    flex-direction: row;
 
     .bannerLhs {
         width: 35%;
@@ -95,5 +96,56 @@
         }
 
         
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        flex-direction: column;
+        height: auto;
+    
+        .bannerLhs {
+            width: 100%;
+            padding-right: 0;
+            height: 100%;
+            margin-bottom: 20px;
+    
+            .bannerLhsInfo {
+                padding: 36px 20px;
+    
+                .heading {
+                    font-size: 26px;
+                }
+            }
+        }
+    
+        .bannerRhs {
+            background-image: url('/images/bannerImg.png');
+            background-size: cover;
+            padding: 16px;
+            height: 100%;
+            width: 100%;
+    
+            .bannerRhsInfo {
+                width: 100%;
+    
+                h1 {
+                    font-size: 26px;
+                    line-height: 35px;
+                    margin: 0 0 16px;
+                }
+        
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+    
+                a {
+                    margin-top: 24px;
+                }
+            }
+    
+            
+        }
     }
 }

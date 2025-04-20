@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <MainBanner />
-      <GetFreeProposal/>
+      {/* <GetFreeProposal/> */}
     </div>
   );
 }
