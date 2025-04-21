@@ -1,0 +1,25 @@
+.btn {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+
+    &.btn-white {
+        background-color: $white;
+        color: $black;
+    }
+    
+    &.btn-blue {
+        background-color: $primary-color;
+        color: $white;
+    }
+
+    &.btn-black {
+        background-color: $black;
+        color: $white;
+    }
+}

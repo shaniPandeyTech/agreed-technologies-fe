@@ -1,35 +1,28 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Container, Typography, Button } from '@mui/material';
+import Link from "next/link";
+import MainBanner from "@/src/components/LandingPage/Banner";
+import GetFreeProposal from "@/src/components/LandingPage/GetFreeProposal";
+import ResultsDriven from "@/src/components/LandingPage/Resultdriven";
+import DriveRevenue from "@/src/components/LandingPage/DriveRevenue";
+import SeoResults from '@/src/components/LandingPage/SeoResults'
+import WhyGo from '@/src/components/LandingPage/WhyGo'
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <Container maxWidth="sm">
-      <Typography variant="h3" gutterBottom>
-        Hello MUI + Next.js!
-      </Typography>
-      <Button variant="contained" color="primary">
-        Click Me
-      </Button>
-    </Container>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-      </main>
-      
+    <div className="container">
+      <MainBanner />
+      <GetFreeProposal/>
+      <ResultsDriven/>
+      <DriveRevenue/>
+      <div className="whiteBox">
+            <h2>Get ready to grow your Organic Sales</h2>
+            <div className="text-center">
+              <p className="mb-36">You can achieve significant revenue growth and expanded market share through our proven strategies.</p>
+              <Link href="#" className="btn btn-blue">Get Proposal</Link>
+            </div>
+        </div>
+
+        <SeoResults/>
+        <WhyGo/>
     </div>
   );
 }

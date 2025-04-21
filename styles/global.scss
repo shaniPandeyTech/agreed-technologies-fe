@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import './root';
+@import './container';
+@import './buttons';
+
+.whiteBox {
+    background-color: $white;
+    border-radius: 36px;
+    padding: 64px;
+    margin-bottom: 56px;
+
+    font-size: 18px;
+    line-height: 31px;
+    color: $black;
+
+    h2 {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 66px;
+        color: $black;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-36 {
+    margin-bottom: 36px;
+}
+
+
+@media (max-width: 767px) {
+    .whiteBox {
+        padding: 20px;
+        margin-bottom: 24px;
+
+        font-size: 14px;
+        line-height: 22px;
+
+        h2 {
+            font-size: 26px;
+            line-height: 35px;
+            color: $black;
+            margin-bottom: 16px;
+        }
+    }
+}
