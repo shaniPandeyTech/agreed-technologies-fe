@@ -1,8 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
-import  Header from '@/src/components/Header';
-
+import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/global.scss";
+import Header from "@/src/components/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
