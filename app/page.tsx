@@ -1,12 +1,15 @@
 "use client"
-import CustomSlider from "@/src/components/CustomSlider";
+import Link from "next/link";
+import MainBanner from "@/src/components/LandingPage/Banner";
+import ResultsDriven from "@/src/components/LandingPage/Resultdriven";
+import DriveRevenue from "@/src/components/LandingPage/DriveRevenue";
+import SeoResults from "@/src/components/LandingPage/SeoResults";
+import WhyGo from "@/src/components/LandingPage/WhyGo";
+import GetFreeProposal from "@/src/components/LandingPage/getFreeProposal";
 import DriveRevenueCard from "@/src/components/DriveRevenueCard";
 import FaqSection from "@/src/components/FaqSection";
 
 export default function Home() {
-  
- 
-
   const settings = {
     dots: true,
     arrow: true,
@@ -15,19 +18,36 @@ export default function Home() {
     slideToShow: 2,
     SlideToScroll: 1,
     speed: 500,
-    swipe: true
-  }
+    swipe: true,
+  };
   return (
-    <div>
-      <div className="container">
-      <br/><br/><br/>
-        <FaqSection />
-        <DriveRevenueCard />
-        
-
-        <br/><br/><br/>
-        <br/><br/><br/>
+    <div className="container">
+      <MainBanner />
+      <GetFreeProposal />
+      <ResultsDriven />
+      <DriveRevenue />
+      <div className="whiteBox">
+        <h2>Get ready to grow your Organic Sales</h2>
+        <div className="text-center">
+          <p className="mb-36">
+            You can achieve significant revenue growth and expanded market share
+            through our proven strategies.
+          </p>
+          <Link href="#" className="btn btn-blue">
+            Get Proposal
+          </Link>
+        </div>
       </div>
+
+      <SeoResults />
+      <WhyGo />
+      <br/><br/>
+      <FaqSection />
+      <br/><br/>
+      <DriveRevenueCard />
+      <br/><br/>
+      
+
     </div>
   );
 }

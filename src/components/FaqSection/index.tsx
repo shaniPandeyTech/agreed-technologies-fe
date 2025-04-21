@@ -3,7 +3,7 @@ import style from './index.module.scss'
 import CustomAccordion from '../CustomAccordion';
 
 const FaqSection = () => {
-    const [expandedItemId, setExpandedItemId] = useState<any>(null);
+    const [expandedItemId, setExpandedItemId] = useState<any>(1);
     const data = [
         {
           id: 1,
