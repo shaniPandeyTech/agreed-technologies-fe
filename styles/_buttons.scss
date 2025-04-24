@@ -11,15 +11,27 @@
     &.btn-white {
         background-color: $white;
         color: $black;
+        transition: 0.3s;
+        &:hover{
+            background: $primary-color;
+        }
     }
     
     &.btn-blue {
         background-color: $primary-color;
         color: $white;
+        transition: 0.3s;
+        &:hover{
+            background: $black;
+        }
     }
 
     &.btn-black {
         background-color: $black;
         color: $white;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
