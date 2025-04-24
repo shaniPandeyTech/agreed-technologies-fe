@@ -66,7 +66,6 @@ const CustomSlider = (props: SliderTypeProps) => {
     infinite: customSettings?.infinite || false,
     speed: customSettings?.speed || 1500,
     initialSlide: 0,
-    centerPadding: '50px',
     slidesToShow: customSettings?.slidesToShow || 1,
     slidesToScroll: customSettings?.slidesToScroll || 1,
     autoplay: customSettings?.autoplay || false,
