@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import styles from "./header.module.scss";
 
-export default function NavLink({href, children}) {
+export default function NavLink({href, children}: any) {
     const path = usePathname();
     const isActive = path === href;
     

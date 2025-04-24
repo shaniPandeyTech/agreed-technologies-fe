@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import MainBanner from "@/src/components/LandingPage/Banner";
 import ResultsDriven from "@/src/components/LandingPage/Resultdriven";
@@ -8,6 +8,7 @@ import WhyGo from "@/src/components/LandingPage/WhyGo";
 import GetFreeProposal from "@/src/components/LandingPage/getFreeProposal";
 import DriveRevenueCard from "@/src/components/DriveRevenueCard";
 import FaqSection from "@/src/components/FaqSection";
+import HomeContactForm from "@/src/components/HomeContactForm";
 
 export default function Home() {
   const settings = {
@@ -21,33 +22,33 @@ export default function Home() {
     swipe: true,
   };
   return (
-    <div className="container">
-      <MainBanner />
-      <GetFreeProposal />
-      <ResultsDriven />
-      <DriveRevenue />
-      <div className="whiteBox">
-        <h2>Get ready to grow your Organic Sales</h2>
-        <div className="text-center">
-          <p className="mb-36">
-            You can achieve significant revenue growth and expanded market share
-            through our proven strategies.
-          </p>
-          <Link href="#" className="btn btn-blue">
-            Get Proposal
-          </Link>
+    <>
+      <div className="container">
+        <MainBanner />
+        <GetFreeProposal />
+        <ResultsDriven />
+        <DriveRevenue />
+        <div className="whiteBox">
+          <h2>Get ready to grow your Organic Sales</h2>
+          <div className="text-center">
+            <p className="mb-36">
+              You can achieve significant revenue growth and expanded market
+              share through our proven strategies.
+            </p>
+            <Link href="#" className="btn btn-blue">
+              Get Proposal
+            </Link>
+          </div>
         </div>
+
+        <SeoResults />
+        <WhyGo />
+        <FaqSection />
+
+        <DriveRevenueCard />
       </div>
 
-      <SeoResults />
-      <WhyGo />
-      <br/><br/>
-      <FaqSection />
-      <br/><br/>
-      <DriveRevenueCard />
-      <br/><br/>
-      
-
-    </div>
+      <HomeContactForm />
+    </>
   );
 }
