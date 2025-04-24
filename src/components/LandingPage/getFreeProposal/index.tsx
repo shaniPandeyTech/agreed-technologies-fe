@@ -7,7 +7,7 @@ function GetFreeProposal() {
     const [name, setName] = useState('');
     const [error, setError] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
 
         if(name.trim() === '') {
