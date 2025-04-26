@@ -41,13 +41,8 @@ export default function Home() {
 
       <SeoResults />
       <WhyGo />
-      <br/><br/>
       <FaqSection />
-      <br/><br/>
       <DriveRevenueCard />
-      <br/><br/>
-      
-
     </div>
   );
 }
